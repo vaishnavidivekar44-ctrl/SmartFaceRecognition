@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.smartface.ui.Dashboard">
+    <VBox alignment="CENTER" spacing="20" style="-fx-background-color: #4C566A;"
+          AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50"
+          AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100">
+        <Label text="Welcome to Smart Face Recognition System" 
+               style="-fx-font-size: 24px; -fx-text-fill: #D8DEE9; -fx-padding: 10px;" />
+
+        <Button text="Start Face Detection" 
+                onAction="#startFaceDetection" 
+                style="-fx-background-color: #88C0D0; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-font-size: 14px;" />
+
+        <Button text="View Attendance" 
+                onAction="#viewAttendance" 
+                style="-fx-background-color: #88C0D0; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-font-size: 14px;" />
+
+        <Button text="View Employee Details" 
+                onAction="#viewEmployeeDetails" 
+                style="-fx-background-color: #A3BE8C; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-font-size: 14px;" />
+
+        <Button text="Logout" 
+                onAction="#logout" 
+                style="-fx-background-color: #BF616A; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-font-size: 14px;" />
+    </VBox>
+</AnchorPane>

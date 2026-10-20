@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.smartface.ui.EmployeeDetailsScreen"
+            prefWidth="800" prefHeight="500">
+
+    <VBox spacing="20" alignment="CENTER" 
+          style="-fx-padding: 20; -fx-background-color: #2E3440;"
+          AnchorPane.topAnchor="20" AnchorPane.bottomAnchor="20" 
+          AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+
+        <Label text="Employee Details" style="-fx-font-size: 24px; -fx-text-fill: #D8DEE9;" />
+
+        <HBox spacing="15" alignment="CENTER">
+            <Label text="Enter Employee ID:" style="-fx-text-fill: #ECEFF4; -fx-font-size: 14px;" />
+            <TextField fx:id="empIdField" prefWidth="150" />
+            <Button text="Fetch Details" onAction="#fetchEmployeeDetails"
+                    style="-fx-background-color: #88C0D0; -fx-text-fill: white; -fx-padding: 8;" />
+        </HBox>
+
+        <Button text="Fetch All Employees" 
+                onAction="#fetchAllEmployees"
+                style="-fx-background-color: #A3BE8C; -fx-text-fill: white; -fx-padding: 8;" />
+
+        <!-- Enhanced TextArea styling for better visibility -->
+        <TextArea fx:id="detailsArea" wrapText="true" prefWidth="500" prefHeight="250"
+                  style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #EBCB8B; -fx-background-color: #3B4252; -fx-border-color: #4C566A; -fx-border-width: 2px;" />
+
+        <Button text="Close" onAction="#closeScreen" 
+                style="-fx-background-color: #BF616A; -fx-text-fill: white; -fx-padding: 8;" />
+    </VBox>
+</AnchorPane>

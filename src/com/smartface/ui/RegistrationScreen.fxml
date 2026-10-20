@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/javafx"
+            fx:controller="com.smartface.ui.RegistrationScreen">
+    <VBox alignment="CENTER" spacing="20" style="-fx-background-color: #2E3440;"
+          AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50"
+          AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100">
+        <Label text="Employee Registration" style="-fx-font-size: 24px; -fx-text-fill: #D8DEE9;" />
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Employee ID:" style="-fx-text-fill: #ECEFF4; -fx-font-size: 14px;" />
+            <TextField fx:id="empIdField" style="-fx-padding: 8px;" />
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="First Name:" style="-fx-text-fill: #ECEFF4; -fx-font-size: 14px;" />
+            <TextField fx:id="firstNameField" style="-fx-padding: 8px;" />
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Last Name:" style="-fx-text-fill: #ECEFF4; -fx-font-size: 14px;" />
+            <TextField fx:id="lastNameField" style="-fx-padding: 8px;" />
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Department:" style="-fx-text-fill: #ECEFF4; -fx-font-size: 14px;" />
+            <TextField fx:id="departmentField" style="-fx-padding: 8px;" />
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Photo Path:" style="-fx-text-fill: #ECEFF4; -fx-font-size: 14px;" />
+            <TextField fx:id="photoPathField" promptText="faces/emp_id.jpg" style="-fx-padding: 8px;" />
+        </HBox>
+
+        <Button fx:id="registerButton" text="Register" onAction="#registerEmployee"
+                style="-fx-background-color: #A3BE8C; -fx-text-fill: #2E3440; -fx-padding: 10px 20px; -fx-font-size: 14px;" />
+
+        <Label fx:id="statusLabel" style="-fx-text-fill: #BF616A; -fx-font-size: 14px;" />
+    </VBox>
+</AnchorPane>

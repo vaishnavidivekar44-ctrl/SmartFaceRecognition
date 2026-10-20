@@ -1,0 +1,39 @@
+/* Styling for the main dashboard */
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 20px;
+}
+
+.label-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+    -fx-padding: 10px;
+}
+
+.button-style {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button-style:hover {
+    -fx-background-color: #45a049;
+}
+
+.camera-feed {
+    -fx-border-color: #333;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-padding: 5px;
+    -fx-background-color: #fff;
+}
+
+.face-detection-status {
+    -fx-font-size: 16px;
+    -fx-text-fill: red;
+    -fx-padding: 5px;
+}

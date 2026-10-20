@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.smartface.ui.AttendanceScreen"
+            prefWidth="800" prefHeight="500">
+
+    <TableView fx:id="attendanceTable" style="-fx-padding: 10; -fx-border-color: #2E3440; -fx-border-width: 2;"
+               AnchorPane.topAnchor="20" AnchorPane.bottomAnchor="20" 
+               AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+        
+        <columns>
+            <TableColumn fx:id="empIdColumn" text="Emp ID" prefWidth="100" />
+            <TableColumn fx:id="firstNameColumn" text="First Name" prefWidth="140" />
+            <TableColumn fx:id="lastNameColumn" text="Last Name" prefWidth="140" />
+            <TableColumn fx:id="dateColumn" text="Date" prefWidth="120" />
+            <TableColumn fx:id="timeColumn" text="Time" prefWidth="100" />
+            <TableColumn fx:id="statusColumn" text="Status" prefWidth="100" />
+        </columns>
+    </TableView>
+</AnchorPane>

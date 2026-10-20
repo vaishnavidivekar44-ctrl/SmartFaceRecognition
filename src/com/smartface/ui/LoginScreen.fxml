@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/javafx"
+            fx:controller="com.smartface.ui.LoginScreen">
+    <VBox spacing="20" alignment="CENTER" style="-fx-background-color: #4C566A;"
+          AnchorPane.topAnchor="100" AnchorPane.bottomAnchor="100"
+          AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100">
+        <Label text="Smart Face Recognition - Login" style="-fx-font-size: 22px; -fx-text-fill: #D8DEE9;" />
+        <TextField fx:id="usernameField" promptText="Username" style="-fx-padding: 10px;" />
+        <PasswordField fx:id="passwordField" promptText="Password" style="-fx-padding: 10px;" />
+        <Button text="Login" onAction="#login" style="-fx-background-color: #88C0D0; -fx-text-fill: white; -fx-padding: 10px;" />
+        <Button text="Register" onAction="#showRegistration" style="-fx-background-color: #88C0D0; -fx-text-fill: white; -fx-padding: 10px;" />
+    </VBox>
+</AnchorPane>
